@@ -1,0 +1,72 @@
+.container{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightblue;
+}
+
+.genderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-bottom: 4rem;
+}
+
+.genderButtons{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.genderButtons:hover{
+    transform: scale(1.1);
+}
+
+.selected{
+    background-color: transparent;
+    opacity: 0.3;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    margin: 0 1rem;
+}
+
+.enterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.button {
+    padding: 10px 40px;
+    font-size: 18px;
+    color: white;
+    background-color: #fe6d1a;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
