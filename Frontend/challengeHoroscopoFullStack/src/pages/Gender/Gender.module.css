@@ -1,8 +1,6 @@
 .container{
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    height: 100%;
+    place-items: center;
+    align-content: center;
 }
 
 .titleContainer{
@@ -25,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    place-items: center;
     margin-bottom: 4rem;
 }
 

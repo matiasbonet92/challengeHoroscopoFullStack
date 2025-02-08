@@ -8,7 +8,8 @@ const Welcome = () => {
             <div className={styles.container}>
                 <img src={dama} alt="dama" className={styles.image} />
                 <div className={styles.linkContainer}>
-                    <Link to="/gender" className={styles.button}>INGRESAR</Link>
+                    <Link to="/gender" className={styles.enterButton}>INGRESAR</Link>
+                    <Link to="/report" className={styles.reportButton}>ESTADISTICAS</Link>
                 </div>
             </div>
         </>

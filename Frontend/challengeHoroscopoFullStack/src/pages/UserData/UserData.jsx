@@ -33,6 +33,10 @@ const ExportData = () => {
             alert('Debes completar todos los campos');
             e.preventDefault();
         }
+        if(!email.match('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$') && email !== ''){
+            alert('El mail no tiene un formato correcto');
+            e.preventDefault();
+        }
     }
 
     const userData = {
@@ -44,7 +48,7 @@ const ExportData = () => {
 
     return (
         <>
-            <Header/>
+            <Header title={'Tus Datos'}/>
             <div className={styles.container}>
                 <div className={styles.titleContainer}>
                     <h1 className={styles.title}>INGRESA TUS DATOS</h1>

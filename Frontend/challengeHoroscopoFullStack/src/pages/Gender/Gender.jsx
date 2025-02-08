@@ -22,7 +22,7 @@ const Gender = () => {
 
     return(
         <>
-            <Header />
+            <Header title={'Tu Genero'} />
             <div className={styles.container}>
                 <div className={styles.titleContainer}>
                     <h1 className={styles.title}>INGRESA TU GÉNERO</h1>

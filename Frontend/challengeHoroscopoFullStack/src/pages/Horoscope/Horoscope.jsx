@@ -71,7 +71,7 @@ const Horoscope = () => {
 
     return (
         <>     
-            <Header/>
+            <Header title={'Tu Horóscopo'}/>
             <div className={styles.container}>
                 {
                     isLoading ? ( <img className={styles.image} src={spinner} alt="" /> ) : (
@@ -82,7 +82,7 @@ const Horoscope = () => {
                             )}
                         </div>
                         <div className={styles.contentContainer}>
-                            <p className={styles.title}>Hola {userData.name}!</p>
+                            <h1 className={styles.title}>Hola {userData.name}!</h1>
                             <p className={styles.content}>Tu horoscopo para hoy dice que {apiResponse.horoscope}</p>
                             <p className={styles.daysTo}>Faltan {daysToBirthDate} dias para tu cumpleaños</p>
                         </div>
