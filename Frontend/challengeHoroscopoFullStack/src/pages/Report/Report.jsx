@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Header/Header.jsx'
 import styles from './Report.module.css'
+import { translateSign } from '../../components/index.js'
 
 export default function Report() {
   const [storageData, setStorageData] = useState([])
@@ -46,7 +47,7 @@ export default function Report() {
             <span className={styles.mostSearchedTitle}>Signo/s mas buscado/s:</span>
             {
               mostSearchedSign.map(([sign, count]) => (
-                <span className={styles.mostSearchedContent}>{sign} con {count} busquedas</span>
+                <span className={styles.mostSearchedContent}>{translateSign(sign)} con {count} busquedas</span>
               ))
             }
           </div>
@@ -54,24 +55,28 @@ export default function Report() {
             <table className={styles.table}>
               <thead>
                 <tr>
+                  <th>Fecha de Busqueda</th>
                   <th>Nombre</th>
                   <th>Email</th>
                   <th>Genero</th>
                   <th>Fecha de Nacimiento</th>
                   <th>Signo</th>
                   <th>Horoscopo</th>
+                  <th>Proximo Cumpleaños</th>
                 </tr>
               </thead>
               <tbody>
                 {storageData ?
                   storageData.map((item) => (
                     <tr key={item.key}>
+                      <td>{item.value.dateOfSearch}</td>
                       <td>{item.value.name}</td>
                       <td>{item.value.email}</td>
                       <td>{item.value.gender}</td>
                       <td>{item.value.birthDate}</td>
-                      <td>{item.value.sign}</td>
+                      <td>{translateSign(item.value.sign)}</td>
                       <td>{item.value.horoscope}</td>
+                      <td>{item.value.daysToNextBirthdate} dias</td>
                     </tr>
                   ))
                   : null}

@@ -29,12 +29,19 @@ const ExportData = () => {
     }
 
     const handleContinueClick = (e) => {
+        const todayDate = new Date(Date.now()).toLocaleDateString()
+        const formatedDate = todayDate.split('/').reverse().join('-')
+
         if(name === '' || email === '' || birthDate === '') {
             alert('Debes completar todos los campos');
             e.preventDefault();
         }
         if(!email.match('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$') && email !== ''){
             alert('El mail no tiene un formato correcto');
+            e.preventDefault();
+        }
+        if(new Date(birthDate) > new Date(formatedDate)){
+            alert('No puedes ingresar una fecha mayor a hoy');
             e.preventDefault();
         }
     }

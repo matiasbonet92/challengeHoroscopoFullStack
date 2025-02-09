@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-const url = 'http://localhost:3000/';
+const url = 'https://challengehoroscopofullstack.onrender.com/';
 
 export const fetchHoroscope = (newUserData) => axios.post(url, newUserData);

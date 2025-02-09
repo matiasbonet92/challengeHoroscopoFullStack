@@ -1,4 +1,4 @@
-export const getUserSign = (birthDate) => {
+export const getUserSign = async (birthDate) => {
     const formatedBirthDate = birthDate.split('-').slice(1).join('-')
     
     if (formatedBirthDate >= '03-21' && formatedBirthDate <= '04-20') return 'Aries';
@@ -14,7 +14,7 @@ export const getUserSign = (birthDate) => {
     if (formatedBirthDate >= '01-21' && formatedBirthDate <= '02-19') return 'Aquarius';
     if (formatedBirthDate >= '02-20' && formatedBirthDate <= '03-20') return 'Pisces';
 
-    return 'No se ha podido determinar el.birthDate, userDatathDate, userDatano';
+    return 'No se ha podido determinar el signo';
 }
 
 export const getUserSignImage = async (icon) => {
@@ -33,5 +33,43 @@ export const getUserSignImage = async (icon) => {
     if(imageName === 'zodiac-11') return 'boton_acuario.png';
     if(imageName == 'zodiac-12') return 'boton_piscis.png';
 
-    return 'No se ha podido determinar el signo';
+    return 'No se ha podido determinar la imagen del signo';
+}
+
+export const getDaysToNextBirthdate = async (date) => {
+    // consigo las fechas completas de su nacimiento y de hoy
+    const birthDate = new Date(date)
+    const today = new Date()
+    // consigo dia y mes del nacimiento
+    const month = birthDate.getMonth()
+    const day = birthDate.getDate()
+    //creo la fecha proxima de cumpleaños
+    let nextBirthdate = new Date(today.getFullYear(), month, day)
+    //si el cumple ya paso uso el proximo año
+    if (nextBirthdate < today){
+        nextBirthdate = new Date(nextBirthdate.getFullYear() + 1, month, day)
+    }
+    // calculo dias hasta el proximo cumple
+    const timeDiff = nextBirthdate.getTime() - today.getTime()
+    // Aca Math.ceil redondea para arriba y la timediff esta en milisegundos
+    // la multiplicacion se hace para saber los milisegundos en un dia
+    // (1000 ms * 60 segundos * 60 minutos * 24 horas)
+    const daysToBirthDate = Math.ceil(timeDiff / (1000 * 60 * 60 * 24))
+
+    return daysToBirthDate
+}
+
+export const translateSign = (sign) => {
+    if (sign == 'Aries') return 'Aries';
+    if (sign == 'Taurus') return 'Tauro';
+    if (sign == 'Gemini') return 'Geminis';
+    if (sign == 'Cancer') return 'Cancer';
+    if (sign == 'Leo') return 'Leo';
+    if (sign == 'Virgo') return 'Virgo';
+    if (sign == 'Libra') return 'Libra';
+    if (sign == 'Scorpio') return 'Escorpio';
+    if (sign == 'Sagittarius') return 'Sagitario';
+    if (sign == 'Capricorn') return 'Capricornio';
+    if (sign == 'Aquiarius') return 'Acuario';
+    if (sign == 'Pisces') return 'Piscis';
 }
