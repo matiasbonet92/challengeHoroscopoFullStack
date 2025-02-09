@@ -1,10 +1,11 @@
 # challengeHoroscopoFullStack - Matias Bonet
 
-Para utilizar la alicacion hacer click en el siguiente link: https://challengehoroscopofullstack-1.onrender.com/
+Para utilizar la aplicacion hacer click en el siguiente link: https://challengehoroscopofullstack-1.onrender.com/
 
-------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 En caso de querer correr la aplicacion de manera local se debe clonar el repositorio utilizando la opcion preferida (se recomienda utilizar HTTPS):
+
 Pasos:
 
 - Copiar el link para el clonado
