@@ -53,6 +53,7 @@ th, td{
     .container {
         display: grid;
         place-items: center;
+        justify-content: center;
         align-content: start;
     }
     
