@@ -48,8 +48,6 @@
     display: grid;
     place-items: center;
     align-content: center;
-    height: 100vh;
-    background-color: white;
   }
   
   .image{
