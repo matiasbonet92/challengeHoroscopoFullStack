@@ -7,7 +7,20 @@ const Header = ({title}) => {
     const navigate = useNavigate();
 
     const handleBackClick = () => {
-        navigate(-1)
+        console.log(location.pathname)
+        switch (location.pathname){
+            case '/gender':
+                navigate('/')
+                break;
+            case '/data':
+                navigate('/gender')
+                break;
+            case '/horoscope':
+                navigate('/')
+                break;
+            default:
+                break;
+        }
     }
 
     return(
