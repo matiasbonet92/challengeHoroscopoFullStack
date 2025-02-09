@@ -169,7 +169,7 @@
     }
     
     .backButton {
-        font-size: 18px;
+        font-size: 14px;
         color: white;
         background-color: #0068AA;
         border: none;
@@ -180,7 +180,7 @@
     }
     
     .continueButton {
-        font-size: 18px;
+        font-size: 14px;
         color: white;
         background-color: #fe6d1a;
         border: none;

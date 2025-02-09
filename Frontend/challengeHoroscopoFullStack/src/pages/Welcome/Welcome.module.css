@@ -65,8 +65,7 @@
   }
 
   .enterButton {
-    padding: 10px 40px;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     background-color: #fe6d1a;
     border: none;
@@ -77,8 +76,7 @@
   }
 
   .reportButton {
-    padding: 10px 40px;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     background-color: #0068AA;
     border: none;
