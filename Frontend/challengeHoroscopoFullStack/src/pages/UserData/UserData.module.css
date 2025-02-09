@@ -102,6 +102,9 @@
 
 @media (max-width: 768px) {
     .container{
+        display: grid;
+        place-items: center;
+        align-content: start;
         margin: 0%;
         padding: 0%;
         width: 100%;
@@ -175,7 +178,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 0.5rem;
         gap: 3rem;
     }
     

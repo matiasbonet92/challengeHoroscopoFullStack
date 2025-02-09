@@ -1,8 +1,17 @@
 html, body, #root {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
-    overflow-y: auto;
-    display: inline-block;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+  html, body, #root {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
   }
+}

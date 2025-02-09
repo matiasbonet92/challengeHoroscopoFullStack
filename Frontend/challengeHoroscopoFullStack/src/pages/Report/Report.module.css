@@ -100,4 +100,8 @@ th, td{
     th, td{
         border: 1px solid #fe6d1a;
     }
+
+    .mediaQuery{
+        display: none;
+    }
 }

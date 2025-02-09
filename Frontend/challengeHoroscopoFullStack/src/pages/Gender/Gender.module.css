@@ -71,8 +71,9 @@
 
 @media (max-width: 768px) {
     .container{
+        display: grid;
         place-items: center;
-        align-content: center;
+        align-content: start;
     }
     
     .titleContainer{
