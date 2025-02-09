@@ -51,7 +51,8 @@ export default function Report() {
               ))
             }
           </div>
-          <div>
+          <div className={styles.tableContainer}>
+            <span className={styles.tableTitle}>Historial:</span>
             <table className={styles.table}>
               <thead>
                 <tr>

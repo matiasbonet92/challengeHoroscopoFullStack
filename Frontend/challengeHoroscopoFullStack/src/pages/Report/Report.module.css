@@ -54,29 +54,42 @@ th, td{
         display: grid;
         place-items: center;
         align-content: start;
-        gap: 0;
     }
     
     .mostSearchedContainer {
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
-        padding: 1rem;
+        gap: 0.5rem;
     }
     
     .mostSearchedTitle {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: lightblue;
     }
     
     .mostSearchedContent {
-        font-size: 16px;
+        font-size: 14px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
         font-style: italic;
+    }
+
+    .tableContainer{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .tableTitle{
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: lightblue;
+        text-align: center;
     }
     
     .table{
