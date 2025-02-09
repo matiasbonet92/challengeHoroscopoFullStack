@@ -26,12 +26,12 @@ export const getUserSignImage = async (icon) => {
     if(imageName === 'zodiac-4') return 'boton_cancer.png';
     if(imageName === 'zodiac-5') return 'boton_leo.png';
     if(imageName === 'zodiac-6') return 'boton_virgo.png';
-    if(imageName === 'zodiac-7') return 'boton_libre.png';
+    if(imageName === 'zodiac-7') return 'boton_libra.png';
     if(imageName === 'zodiac-8') return 'boton_escorpio.png';
     if(imageName === 'zodiac-9') return 'boton_sagitario.png';
     if(imageName === 'zodiac-10') return 'boton_capricornio.png';
     if(imageName === 'zodiac-11') return 'boton_acuario.png';
-    if(imageName == 'zodiac-12') return 'boton_piscis.png';
+    if(imageName === 'zodiac-12') return 'boton_piscis.png';
 
     return 'No se ha podido determinar la imagen del signo';
 }

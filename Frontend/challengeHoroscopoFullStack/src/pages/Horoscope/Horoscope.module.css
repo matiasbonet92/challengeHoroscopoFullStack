@@ -93,6 +93,8 @@
         display: grid;
         place-items: center;
         align-content: start;
+        width: 50%;
+        height: 50%;
     }
     
     .title {

@@ -35,7 +35,8 @@ const Horoscope = () => {
                 // guardo response data
                 setApiResponse(response.data)
                 // recupero la imagen del horoscopo
-                setHoroscopeImage(await getUserSignImage(response.data.icon))
+                const imagePath = await getUserSignImage(response.data.icon)
+                setHoroscopeImage(imagePath)
                 // calcular los dias desde hoy hasta el cumpleaños(el date esta en responde.data.date) para saber cuantos dias faltan para el cumpleaños
                 const days = await getDaysToNextBirthdate(response.data.date)
                 setDaysToBirthDate(days)     
@@ -53,9 +54,9 @@ const Horoscope = () => {
 
         }catch(error){
             console.log(error)
+        }finally{
+            setIsLoading(false) 
         }
-
-        setIsLoading(false) 
 
     }
 
