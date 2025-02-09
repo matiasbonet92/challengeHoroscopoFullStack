@@ -48,3 +48,56 @@ tbody tr:nth-child(even) {
 th, td{
     border: 1px solid #fe6d1a;
 }
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh; 
+        place-items: center;
+        gap: 0;
+    }
+    
+    .mostSearchedContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .mostSearchedTitle {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: lightblue;
+        gap: 1rem;
+    }
+    
+    .mostSearchedContent {
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    
+    tbody tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+      
+    tbody tr:nth-child(even) {
+        background-color: white;
+    }
+    
+    th, td{
+        border: 1px solid #fe6d1a;
+    }
+}
