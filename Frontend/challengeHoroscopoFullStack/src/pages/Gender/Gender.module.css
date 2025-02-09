@@ -116,11 +116,10 @@
     }
     
     .image{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         background-color: transparent;
         border: none;
-        margin: 0 1rem;
     }
     
     .enterContainer {
@@ -131,7 +130,6 @@
     }
     
     .button {
-        padding: 10px 40px;
         font-size: 18px;
         color: white;
         background-color: #fe6d1a;
