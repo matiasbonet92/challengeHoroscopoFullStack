@@ -45,6 +45,7 @@
 
 @media (max-width: 768px) {
   .container {
+    display: grid;
     place-items: center;
     align-content: center;
     height: 100vh;
