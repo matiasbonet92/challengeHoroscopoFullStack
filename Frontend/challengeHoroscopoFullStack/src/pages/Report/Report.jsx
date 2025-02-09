@@ -61,7 +61,7 @@ export default function Report() {
                   <th className={styles.mediaQuery}>Email</th>
                   <th className={styles.mediaQuery}>Genero</th>
                   <th>Fecha de Nacimiento</th>
-                  <th>Signo</th>
+                  <th className={styles.mediaQuery}>Signo</th>
                   <th>Horoscopo</th>
                   <th className={styles.mediaQuery}>Proximo Cumpleaños</th>
                 </tr>
@@ -75,7 +75,7 @@ export default function Report() {
                       <td className={styles.mediaQuery}>{item.value.email}</td>
                       <td className={styles.mediaQuery}>{item.value.gender}</td>
                       <td>{item.value.birthDate}</td>
-                      <td>{translateSign(item.value.sign)}</td>
+                      <td className={styles.mediaQuery}>{translateSign(item.value.sign)}</td>
                       <td>{item.value.horoscope}</td>
                       <td className={styles.mediaQuery}>{item.value.daysToNextBirthdate} dias</td>
                     </tr>
