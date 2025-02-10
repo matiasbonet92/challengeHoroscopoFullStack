@@ -40,7 +40,7 @@ const Gender = () => {
                     </button>
                 </div>
                 <div className={styles.enterContainer}>
-                    <Link to="/data" onClick={handleClick} className={styles.button}>Ingresar</Link>
+                    <Link to="/data" onClick={handleClick} className={styles.button}>CONTINUAR</Link>
                 </div>
             </div>
         </>
