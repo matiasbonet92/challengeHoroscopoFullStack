@@ -43,7 +43,7 @@
 
 ### :pushpin: Horoscopo:
 
-![{76CEFF02-29E3-4063-B49F-F5F11084A796}](https://github.com/user-attachments/assets/193a14fb-cfec-456a-9293-7303ed77f7d6)
+![{ACFD7B7B-C254-46CE-BD9A-962844D5653D}](https://github.com/user-attachments/assets/515aefc0-fd1c-4120-b2d3-e92aec694def)
 
 :diamond_shape_with_a_dot_inside: Luego de un instante vas a tener tu horoscopo listo! :tada::tada::tada:.</br>
 :diamond_shape_with_a_dot_inside: Si te confundiste con algun dato, podes volver con el boton de la cabecera para modificar lo que necesites, sean los datos o el genero. Si volves hasta la pantalla principal los datos cargados se borraran y tenes que comenzar de nuevo</br>
