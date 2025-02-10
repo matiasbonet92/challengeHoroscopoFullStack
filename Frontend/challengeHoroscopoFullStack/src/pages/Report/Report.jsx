@@ -46,9 +46,11 @@ export default function Report() {
           <div className={styles.mostSearchedContainer}>
             <span className={styles.mostSearchedTitle}>Signo/s mas buscado/s:</span>
             {
-              mostSearchedSign.map(([sign, count]) => (
-                <span className={styles.mostSearchedContent}>{translateSign(sign)} con {count} busquedas</span>
-              ))
+              mostSearchedSign ? 
+                mostSearchedSign.map(([sign, count]) => (
+                  <span className={styles.mostSearchedContent}>{translateSign(sign)} con {count} busquedas</span>
+                ))
+              : 'Sin datos'
             }
           </div>
           <div className={styles.tableContainer}>
@@ -67,7 +69,7 @@ export default function Report() {
                 </tr>
               </thead>
               <tbody>
-                {storageData ?
+                {storageData.length > 0 ?
                   storageData.map((item) => (
                     <tr key={item.key}>
                       <td>{item.value.dateOfSearch}</td>
@@ -80,7 +82,18 @@ export default function Report() {
                       <td className={styles.mediaQuery}>{item.value.daysToNextBirthDate} dias</td>
                     </tr>
                   ))
-                  : null}
+                  : 
+                  <tr>
+                      <td>Sin Datos</td>
+                      <td>Sin Datos</td>
+                      <td className={styles.mediaQuery}>Sin Datos</td>
+                      <td className={styles.mediaQuery}>Sin Datos</td>
+                      <td>Sin Datos</td>
+                      <td className={styles.mediaQuery}>Sin Datos</td>
+                      <td>Sin Datos</td>
+                      <td className={styles.mediaQuery}>Sin Datos</td>
+                    </tr>
+                }
               </tbody>
             </table>
           </div>
