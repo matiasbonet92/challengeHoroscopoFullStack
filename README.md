@@ -4,7 +4,7 @@
 
 => Opcion 1 (Recomendada :white_check_mark:): Ingreso mediante la url https://challengehoroscopofullstack-1.onrender.com/
 
-=> Opcion 2 (Para los aventureros :mountain_bicyclist:): Ingreso mediante entorno local, pasos: se debe clonar el repositorio utilizando la opcion preferida (se recomienda utilizar HTTPS):
+=> Opcion 2: Ingreso mediante entorno local, pasos: se debe clonar el repositorio utilizando la opcion preferida (se recomienda utilizar HTTPS):
 
 ### :pushpin: Pasos:
 
