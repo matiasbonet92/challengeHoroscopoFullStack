@@ -10,7 +10,7 @@
 
 ![{8C0C962E-189B-44FE-A503-147F49CF27EB}](https://github.com/user-attachments/assets/9c60b1ce-7420-4e13-9266-feac7bf64e7d)
 
-:diamond_shape_with_a_dot_inside: Clonar el repositorio utilizando la opcion preferida (se recomiento utilizar HTTPS).
+:diamond_shape_with_a_dot_inside: Clonar el repositorio utilizando la opcion preferida (se recomiento utilizar HTTPS).\n
 :diamond_shape_with_a_dot_inside: Copiar el link de la opcion seleccionada.
 :diamond_shape_with_a_dot_inside: Abrir la terminal del sistema en el directorio que quieran utilizar y ejecutar git clone [link copiado].
 :diamond_shape_with_a_dot_inside: Una vez terminada la clonacion, moverse con el comendo hasta la carpeta '/Frontend/challengeHoroscopoFullStack' y ejecutar el comando npm install.
