@@ -31,7 +31,7 @@
 
 ![{965FC0DB-2458-4B04-8AA1-ABDCE4D46BB0}](https://github.com/user-attachments/assets/169d7e72-a781-4c4d-b389-f5f16cffba19)
 
-:diamond_shape_with_a_dot_inside: Si queres volver al Home, podes hacer click en el boton de la cabecera. Tene en cuenta que si sellecionas un genero previamente se borrara</br>
+:diamond_shape_with_a_dot_inside: Si queres volver al Home, podes hacer click en el boton de la cabecera. Tene en cuenta que si seleccionas un genero previamente se borrara</br>
 :diamond_shape_with_a_dot_inside: Si queres continuar tenes que selecionar un genero (obligatorio :white_check_mark:) y hacer click en 'Continuar'.</br>
 
 ### :pushpin: Datos:
@@ -45,13 +45,14 @@
 
 ![{ACFD7B7B-C254-46CE-BD9A-962844D5653D}](https://github.com/user-attachments/assets/515aefc0-fd1c-4120-b2d3-e92aec694def)
 
-:diamond_shape_with_a_dot_inside: Luego de un instante vas a tener tu horoscopo listo! :tada::tada::tada:.</br>
+:diamond_shape_with_a_dot_inside: Luego de un instante vas a tener tu horoscopo listo! :tada::tada::tada: PD: Si es la primer consulta tene paciencia, puede demorar :stopwatch:.</br>
 :diamond_shape_with_a_dot_inside: Si te confundiste con algun dato, podes volver con el boton de la cabecera para modificar lo que necesites, sean los datos o el genero. Si volves hasta la pantalla principal los datos cargados se borraran y tenes que comenzar de nuevo</br>
 :diamond_shape_with_a_dot_inside: Si queres continuar y guardar los datos :floppy_disk: hace click en 'Continuar' y vas a volver a la pantalla principal.</br>
 
 ### :pushpin: Estadisticas:
 
-![{F50B4E40-3602-4007-9F18-259A4A246AD5}](https://github.com/user-attachments/assets/fd68780f-023f-45b1-91a8-fe8f51bd4270)
+![{DEFDEAFE-E23F-4B3B-8F7B-56311409A81B}](https://github.com/user-attachments/assets/87d00c98-b346-4383-9cdd-d1166a7b4097)
 
 :diamond_shape_with_a_dot_inside: En las estadisticas podes consultar toda la informacion al instante :books::books:.</br>
+:diamond_shape_with_a_dot_inside: Ademas podes eliminar el historial cuando quiera haciendo click en :wastebasket:.</br>
 
