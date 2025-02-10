@@ -80,7 +80,7 @@ const Horoscope = () => {
             <Header title={'Tu Horóscopo'}/>
             <div className={styles.container}>
                 {
-                    isLoading ? ( <img className={styles.image} src={spinner} alt="" /> ) : (
+                    isLoading ? ( <img className={styles.spinner} src={spinner} alt="" /> ) : (
                     <>
                         <div className={styles.titleContainer}>
                             {horoscopeImage && (

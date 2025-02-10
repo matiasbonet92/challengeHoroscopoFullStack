@@ -11,6 +11,14 @@
     margin-top: 2rem;
 }
 
+.spinner{
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    width: 10%;
+    height: 10%;
+}
+
 .titleContainer {
     display: flex;
     justify-content: center;
@@ -93,6 +101,14 @@
         display: grid;
         place-items: center;
         align-content: start;
+        width: 50%;
+        height: 50%;
+    }
+
+    .spinner{
+        display: grid;
+        place-items: center;
+        align-content: center;
         width: 50%;
         height: 50%;
     }

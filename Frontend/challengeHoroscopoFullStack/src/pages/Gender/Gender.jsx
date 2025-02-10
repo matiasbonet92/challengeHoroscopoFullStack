@@ -11,7 +11,8 @@ const Gender = () => {
     const { appData, setAppData } = useAppContext()
 
     const handleGenderClick = (e) => {
-        setAppData( prev => ({ ...prev, gender: e.currentTarget.value }));
+        const data = e.currentTarget.value
+        setAppData( prev => ({ ...prev, gender: data }));
     }
 
     const handleClick = (e) => {

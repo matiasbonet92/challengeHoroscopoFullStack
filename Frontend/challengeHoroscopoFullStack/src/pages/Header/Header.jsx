@@ -2,11 +2,18 @@ import styles from './Header.module.css'
 import back from '/back_button.png'
 import { useLocation, useNavigate} from 'react-router-dom'
 import { useAppContext } from '../../AppContext'
+import Delete from '/trash.png'
+import { useEffect } from 'react'
 
 const Header = ({title}) => {
     const location = useLocation()
     const navigate = useNavigate();
     const { appData, setAppData } = useAppContext()
+    
+    const handleDeleteData = async () => {
+        localStorage.clear()
+        navigate('/')
+    }
 
     const handleBackClick = () => {
         console.log(location.pathname)
@@ -45,7 +52,16 @@ const Header = ({title}) => {
                 <button onClick={handleBackClick} className={styles.button}>
                     <img className={styles.image} src={back} alt="Back" />
                 </button>
-                <span className={styles.title}>{title}</span>
+                <div className={styles.titleContainer}>
+                    <span className={styles.title}>{title}</span>
+                    {
+                        location.pathname === '/report' ? 
+                            <button className={styles.deleteButton} onClick={handleDeleteData}>
+                                <img className={styles.deleteImage} src={Delete} alt="borrar estadisticas"/>
+                            </button> 
+                        : null
+                    }
+                </div>
             </div>
         </>
     )
