@@ -77,7 +77,7 @@ export default function Report() {
                       <td>{item.value.birthDate}</td>
                       <td className={styles.mediaQuery}>{translateSign(item.value.sign)}</td>
                       <td>{item.value.horoscope}</td>
-                      <td className={styles.mediaQuery}>{item.value.daysToNextBirthdate} dias</td>
+                      <td className={styles.mediaQuery}>{item.value.daysToNextBirthDate} dias</td>
                     </tr>
                   ))
                   : null}

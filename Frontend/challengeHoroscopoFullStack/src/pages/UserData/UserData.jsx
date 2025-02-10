@@ -1,27 +1,22 @@
 import Header from '../Header/Header.jsx';
 import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import styles from './UserData.module.css';
+import { useAppContext } from '../../AppContext.jsx';
 
 const ExportData = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [birthDate, setBirthDate] = useState('');
-
-    const location = useLocation();
-    const { gender } = location.state;
+    const { appData, setAppData } = useAppContext();
 
     const handleChange = (e) => {
         switch(e.target.type) {
             case 'text':
-                setName(e.target.value);
+                setAppData(prev => ({...prev, name: e.target.value}));
                 break;
             case 'email':
-                setEmail(e.target.value);
+                setAppData(prev => ({...prev, email: e.target.value}));
                 break;
             case 'date':
-                setBirthDate(e.target.value);
+                setAppData(prev => ({...prev, birthDate: e.target.value}));
                 break;
             default:
                 break;
@@ -29,28 +24,22 @@ const ExportData = () => {
     }
 
     const handleContinueClick = (e) => {
+        // validaciones
         const todayDate = new Date(Date.now()).toLocaleDateString()
         const formatedDate = todayDate.split('/').reverse().join('-')
 
-        if(name === '' || email === '' || birthDate === '') {
+        if(appData.name === '' || appData.email === '' || appData.birthDate === '') {
             alert('Debes completar todos los campos');
             e.preventDefault();
         }
-        if(!email.match('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$') && email !== ''){
+        if(!appData.email.match('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$') && email !== ''){
             alert('El mail no tiene un formato correcto');
             e.preventDefault();
         }
-        if(new Date(birthDate) > new Date(formatedDate)){
+        if(new Date(appData.birthDate) > new Date(formatedDate)){
             alert('No puedes ingresar una fecha mayor a hoy');
             e.preventDefault();
         }
-    }
-
-    const userData = {
-        name: name,
-        email: email,
-        birthDate: birthDate,
-        gender: gender
     }
 
     return (
@@ -63,20 +52,20 @@ const ExportData = () => {
                 <div className={styles.formContainer}>
                     <div className={styles.nameContainer}>
                         <label>Nombre:</label>
-                        <input type="text" onChange={handleChange} required/>
+                        <input type="text" value={appData.name} onChange={handleChange} required/>
                     </div>
                     <div className={styles.mailContainer}>
                         <label>EMail:</label>
-                        <input type="email" onChange={handleChange} required/>
+                        <input type="email" value={appData.email} onChange={handleChange} required/>
                     </div>
                     <div className={styles.dateContainer}>
                         <label>Fecha de Nacimiento:</label>
-                        <input type="date" onChange={handleChange} required/>
+                        <input type="date" value={appData.birthDate} onChange={handleChange} required/>
                     </div>
                 </div>
                 <div className={styles.enterContainer}>
                     <Link className={styles.backButton} to="/gender">VOLVER</Link>
-                    <Link className={styles.continueButton} to="/horoscope" state={userData} onClick={handleContinueClick}>CONTINUAR</Link>
+                    <Link className={styles.continueButton} to="/horoscope" onClick={handleContinueClick}>CONTINUAR</Link>
                 </div>
             </div>
         </>
