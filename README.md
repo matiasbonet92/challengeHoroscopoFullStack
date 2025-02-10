@@ -31,14 +31,14 @@
 
 ![{965FC0DB-2458-4B04-8AA1-ABDCE4D46BB0}](https://github.com/user-attachments/assets/169d7e72-a781-4c4d-b389-f5f16cffba19)
 
-:diamond_shape_with_a_dot_inside: Si queres volver al Home, podes hacer click en el boton de la cabecera.</br>
+:diamond_shape_with_a_dot_inside: Si queres volver al Home, podes hacer click en el boton de la cabecera. Tene en cuenta que si sellecionas un genero previamente se borrara</br>
 :diamond_shape_with_a_dot_inside: Si queres continuar tenes que selecionar un genero (obligatorio :white_check_mark:) y hacer click en 'Continuar'.</br>
 
 ### :pushpin: Datos:
 
 ![{1CF59E8C-37A7-4D5C-8E8A-214679EAAE59}](https://github.com/user-attachments/assets/92d93c26-c577-48b9-8f46-c7f6b247a447)
 
-:diamond_shape_with_a_dot_inside: Si queres volver a cambiar el Genero, podes hacer click en el boton de la cabecera.</br>
+:diamond_shape_with_a_dot_inside: Si queres volver a cambiar el Genero, podes hacer click en el boton de la cabecera. Si volves hasta la pantalla principal los datos cargados se borraran y tenes que comenzar de nuevo</br>
 :diamond_shape_with_a_dot_inside: Si queres continuar tenes que completar todos los datos (obligatorio :white_check_mark:) y hacer click en 'Continuar'.</br>
 
 ### :pushpin: Horoscopo:
