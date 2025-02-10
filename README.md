@@ -31,7 +31,7 @@
 
 ![{965FC0DB-2458-4B04-8AA1-ABDCE4D46BB0}](https://github.com/user-attachments/assets/169d7e72-a781-4c4d-b389-f5f16cffba19)
 
-:diamond_shape_with_a_dot_inside: Si queres volver al Home, podes hacer click en el boton de la cabecera. Tene en cuenta que si sellecionas un genero previamente se borrara</br>
+:diamond_shape_with_a_dot_inside: Si queres volver al Home, podes hacer click en el boton de la cabecera. Tene en cuenta que si seleccionas un genero previamente se borrara</br>
 :diamond_shape_with_a_dot_inside: Si queres continuar tenes que selecionar un genero (obligatorio :white_check_mark:) y hacer click en 'Continuar'.</br>
 
 ### :pushpin: Datos:
@@ -54,5 +54,5 @@
 ![{DEFDEAFE-E23F-4B3B-8F7B-56311409A81B}](https://github.com/user-attachments/assets/87d00c98-b346-4383-9cdd-d1166a7b4097)
 
 :diamond_shape_with_a_dot_inside: En las estadisticas podes consultar toda la informacion al instante :books::books:.</br>
-:diamond_shape_with_a_dot_inside: Ademas podes eliminar el historial cuando quiera haciendo click en el tacho de basura :wastebasket:.</br>
+:diamond_shape_with_a_dot_inside: Ademas podes eliminar el historial cuando quiera haciendo click en :wastebasket:.</br>
 
