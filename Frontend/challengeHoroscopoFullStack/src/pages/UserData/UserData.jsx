@@ -32,7 +32,7 @@ const ExportData = () => {
             alert('Debes completar todos los campos');
             e.preventDefault();
         }
-        if(!appData.email.match('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$') && email !== ''){
+        if(!appData.email.match('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$') && appData.email !== ''){
             alert('El mail no tiene un formato correcto');
             e.preventDefault();
         }
